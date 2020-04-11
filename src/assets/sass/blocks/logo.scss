@@ -1,9 +1,29 @@
-// .logo{
-//   color: $black;
-//   font-size: 1.6rem;
-//   font-weight: 700;
-//   text-decoration: none;
-// }
-// .logo__prefix {
-//   color: $pink;
-// }
+.logo {
+  font-size: 42px;
+  font-family: $header-font;
+  font-weight: 900;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  position: relative;
+
+
+  &-postfix {
+    color: $red;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/logo.svg) ;
+    background-repeat: no-repeat;
+
+    left: 24px;
+    top: -50%;
+
+    width: 54px;
+    height: 21px;
+  }
+
+}

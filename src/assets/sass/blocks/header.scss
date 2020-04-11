@@ -1,9 +1,13 @@
-// .header {
+.header {
+  background-color: $black;
+}
 
-// }
-// .header__inner {
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-// }
-// .header__row {
-  
-// }
+  padding-top: 34px;
+  padding-bottom: 31px;
+
+}

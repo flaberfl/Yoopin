@@ -38,3 +38,25 @@
 //       height: 24px;
 //   }
 // }
+.social {
+  display: flex;
+}
+
+.social__link {
+  margin-left: 16px;
+}
+
+.social__icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  fill: $red;
+
+  transition: fill .1s linear;
+
+  &:hover {
+    fill: $white;
+  }
+
+}

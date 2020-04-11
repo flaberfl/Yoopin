@@ -22,9 +22,16 @@
 }
 
 @font-face {
-    font-family: 'Myriad-Pro-Black';
-  src: local("☺"), url("../fonts/Myriad-Pro-Black.woff") format("woff");
+    font-family: 'Myriad-Pro';
+  src: local("☺"), url("../fonts/Myriad-Pro-Regular.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-Pro';
+  src: local("☺"), url("../fonts/Myriad-Pro-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -35,29 +42,114 @@
   font-style: normal;
 }
 
-html {
-    font-size: 14px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-}
-
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
-.text {
-    font-family: 'regitalic';
-    font-size: 84px;
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
     color: #000;
 }
 
-/* Bootstrap */
 /* Blocks */
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 34px;
+    padding-bottom: 31px;
+}
+
+.logo {
+    font-size: 42px;
+    font-family: "Myriad-Pro";
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo-postfix {
+    color: #df4507;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/logo.svg);
+    background-repeat: no-repeat;
+    left: 24px;
+    top: -50%;
+    width: 54px;
+    height: 21px;
+}
+
+.nav {
+    margin-right: auto;
+    margin-left: 143px;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__menu-link {
+    font-family: "Myriad-Pro";
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 34px;
+    transition: color .1s linear;
+}
+
+.nav__menu-link:hover {
+    color: #df4507;
+}
+
+.social {
+    display: flex;
+}
+
+.social__link {
+    margin-left: 16px;
+}
+
+.social__icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    fill: #df4507;
+    transition: fill .1s linear;
+}
+
+.social__icon:hover {
+    fill: #fff;
+}
+
 /* Vendor Libs */

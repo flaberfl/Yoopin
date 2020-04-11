@@ -1,8 +1,0 @@
-{
-    "editor.fontSize": 13,
-    "editor.fontFamily": "PTSans, sans-serif",
-    "files.autoSave": "onFocusChange",
-    "editor.tabSize": 2,
-    "editor.letterSpacing": 0.7,
-    "editor.fontWeight": "300"
-}

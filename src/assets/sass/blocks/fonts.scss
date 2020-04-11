@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'GentiumBasic-Regular';
-  src: local('☺'), url('../fonts/GentiumBasic-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'GentiumBasic-Regular';
+	src: local('☺'), url('../fonts/GentiumBasic-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'helvetica_bold';
-  src: local('☺'), url('../fonts/helvetica_bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'helvetica_bold';
+	src: local('☺'), url('../fonts/helvetica_bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
@@ -20,9 +20,16 @@
 }
 
 @font-face {
-	font-family: 'Myriad-Pro-Black';
-	src: local('☺'), url('../fonts/Myriad-Pro-Black.woff') format('woff');
+	font-family: 'Myriad-Pro';
+	src: local('☺'), url('../fonts/Myriad-Pro-Regular.woff') format('woff');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad-Pro';
+	src: local('☺'), url('../fonts/Myriad-Pro-Black.woff') format('woff');
+	font-weight: 900;
 	font-style: normal;
 }
 
@@ -32,4 +39,3 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
