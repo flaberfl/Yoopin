@@ -1,8 +1,10 @@
 @import "vars";
 @import "blocks/fonts";
+
 html {
   font-size: 14px;
 }
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -21,6 +23,7 @@ body {
   font-size: 84px;
   color: #000;
 }
+
 /* Bootstrap */
 // @import
 // "../../../node_modules/bootstrap/scss/functions";
@@ -54,9 +57,3 @@ body {
 
 /* Vendor Libs */
 // @import "vendor/slick";
-
-
-
-
-
-

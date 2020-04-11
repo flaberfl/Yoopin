@@ -1,6 +1,9 @@
 "use strict";
 
-const { src, dest } = require("gulp");
+const {
+  src,
+  dest
+} = require("gulp");
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
 const cssbeautify = require("gulp-cssbeautify");
@@ -30,14 +33,14 @@ var path = {
     html: "src/*.html",
     js: "src/assets/js/*.js",
     css: "src/assets/sass/style.scss",
-    fonts: "src/assets/fonts/*.woff",
+    fonts: "src/assets/fonts/**/*.*",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webmanifest,xml}"
   },
   watch: {
     html: "src/**/*.html",
     js: "src/assets/js/**/*.js",
     css: "src/assets/sass/**/*.scss",
-    fonts: "src/assets/fonts/*.woff",
+    fonts: "src/assets/fonts/**/*.*",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webmanifest,xml}"
   },
   clean: "./dist"
@@ -61,7 +64,9 @@ function browserSyncReload(done) {
 
 function html() {
   panini.refresh();
-  return src(path.src.html, { base: "src/" })
+  return src(path.src.html, {
+      base: "src/"
+    })
     .pipe(plumber())
     .pipe(panini({
       root: 'src/',
@@ -75,7 +80,9 @@ function html() {
 }
 
 function css() {
-  return src(path.src.css, { base: "src/assets/sass/" })
+  return src(path.src.css, {
+      base: "src/assets/sass/"
+    })
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -100,7 +107,9 @@ function css() {
 }
 
 function js() {
-  return src(path.src.js, { base: './src/assets/js/' })
+  return src(path.src.js, {
+      base: './src/assets/js/'
+    })
     .pipe(plumber())
     .pipe(rigger())
     .pipe(gulp.dest(path.build.js))
@@ -119,6 +128,11 @@ function images() {
     .pipe(dest(path.build.images));
 }
 
+function fonts() {
+  return src(path.src.fonts)
+    .pipe(dest(path.build.fonts));
+}
+
 function clean() {
   return del(path.clean);
 }
@@ -127,11 +141,11 @@ function watchFiles() {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
-  // gulp.watch([path.watch.fonts], fonts);
+  gulp.watch([path.watch.fonts], fonts);
   gulp.watch([path.watch.images], images);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -145,5 +159,4 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-
-
+// exports.fonts = fonts;
