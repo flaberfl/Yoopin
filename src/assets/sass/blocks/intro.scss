@@ -1,0 +1,58 @@
+.intro {
+  background-color: $black;
+}
+
+.intro__wrapper {
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -100px;
+  min-height: 1030px;
+}
+
+.intro__title {
+  margin: 0 auto;
+  margin-top: 93px;
+  margin-bottom: 38px;
+  max-width: 650px;
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro__arrow {
+  content: "";
+  display: block;
+  position: absolute;
+
+  cursor: pointer;
+  background-color: $white;
+  border: 0;
+
+  top: 8%;
+
+  width: 80px;
+  height: 80px;
+
+  transition: opacity .1s linear;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--prev {
+    left: -115px;
+  }
+
+  &--next {
+    right: -115px;
+  }
+
+}

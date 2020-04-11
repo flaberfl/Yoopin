@@ -1,24 +1,24 @@
-// var portfolio = $("#portfolio");
+var introSlider = $("#intro-slider");
 
-// portfolio.slick({
-//   arrows: false,
-//   dots: true,
-//   speed: 800,
-//   slidesToShow: 2,
-//   slidesToScroll: 2
-// });
-
-
-
-// $("#portfolio-arrow-next").on("click", function (event) {
-//   event.preventDefault();
-
-//   portfolio.slick('slickNext');
-// });
-
-// $("#portfolio-arrow-prev").on("click", function (event) {
-//   event.preventDefault();
+introSlider.slick({
+  arrows: false,
+  dots: false,
+  speed: 800,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 
 
-//   portfolio.slick('slickPrev');
-// });
+
+$("#intro-arrow-next").on("click", function (event) {
+  event.preventDefault();
+
+  introSlider.slick('slickNext');
+});
+
+$("#intro-arrow-prev").on("click", function (event) {
+  event.preventDefault();
+
+
+  introSlider.slick('slickPrev');
+});

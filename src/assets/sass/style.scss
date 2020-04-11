@@ -13,9 +13,9 @@ html {
 
 body {
   margin: 0;
-  font-family: $main-font;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  color: $black;
+  color: $white;
 }
 
 /* Blocks */
@@ -24,8 +24,9 @@ body {
 @import "blocks/logo";
 @import "blocks/nav";
 @import "blocks/social";
-// @import "blocks/intro";
-// @import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/slider";
 // @import "blocks/contacts";
 // @import "blocks/modal";
 // @import "blocks/form";
@@ -33,4 +34,4 @@ body {
 // @import "blocks/footer";
 
 /* Vendor Libs */
-// @import "vendor/slick";
+@import "vendor/slick";

@@ -54,15 +54,16 @@ html {
 
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #fff;
 }
 
 /* Blocks */
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
@@ -91,11 +92,21 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color .1s linear;
     position: relative;
+}
+
+.logo:hover {
+    color: #df4507;
+}
+
+.logo:hover .logo-postfix {
+    color: #fff;
 }
 
 .logo-postfix {
     color: #df4507;
+    transition: color .1s linear;
 }
 
 .logo::before {
@@ -103,15 +114,14 @@ body {
     position: absolute;
     background-image: url(../img/svg/logo.svg);
     background-repeat: no-repeat;
-    left: 24px;
-    top: -50%;
+    left: 23px;
+    top: -55%;
     width: 54px;
     height: 21px;
 }
 
 .nav {
-    margin-right: auto;
-    margin-left: 143px;
+    padding-left: 60px;
 }
 
 .nav__menu {
@@ -152,4 +162,212 @@ body {
     fill: #fff;
 }
 
+.intro {
+    background-color: #000;
+}
+
+.intro__wrapper {
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+    min-height: 1030px;
+}
+
+.intro__title {
+    margin: 0 auto;
+    margin-top: 93px;
+    margin-bottom: 38px;
+    max-width: 650px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro__arrow {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    top: 8%;
+    width: 80px;
+    height: 80px;
+    transition: opacity .1s linear;
+}
+
+.intro__arrow:hover {
+    opacity: .6;
+}
+
+.intro__arrow:focus {
+    outline: 0;
+}
+
+.intro__arrow--prev {
+    left: -115px;
+}
+
+.intro__arrow--next {
+    right: -115px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 16px 13px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    transition: opacity .1s linear;
+}
+
+.btn:hover {
+    opacity: .6;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn--white {
+    background-color: #fff;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.slider-item {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider-title {
+    margin-bottom: 45px;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slider-text {
+    margin: 0 auto;
+    margin-bottom: 72px;
+    font-size: 26px;
+    letter-spacing: 0.1px;
+    line-height: 41px;
+    max-width: 820px;
+}
+
+.slider-btn {
+    margin-left: 13px;
+}
+
+.slider-btn a + a {
+    margin-left: 44px;
+}
+
 /* Vendor Libs */
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    padding: 0 1rem;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
