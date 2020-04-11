@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*  Bootstrap Modal  */
+@font-face {
+    font-family: 'GentiumBasic-Regular';
+  src: local("☺"), url("../fonts/GentiumBasic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica_bold';
+  src: local("☺"), url("../fonts/helvetica_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica_light';
+  src: local("☺"), url("../fonts/helvetica_light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-Pro-Black';
+  src: local("☺"), url("../fonts/Myriad-Pro-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'regitalic';
+  src: local("☺"), url("../fonts/regitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.text {
+    font-family: 'Myriad-Pro-Black';
+    font-size: 84px;
+    color: #000;
+}
+
+/* Bootstrap */
+/* Blocks */
+/* Vendor Libs */

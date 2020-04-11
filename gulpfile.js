@@ -23,18 +23,21 @@ var path = {
     html: "dist/",
     js: "dist/assets/js/",
     css: "dist/assets/css/",
-    images: "dist/assets/img/"
+    images: "dist/assets/img/",
+    fonts: "dist/assets/fonts/"
   },
   src: {
     html: "src/*.html",
     js: "src/assets/js/*.js",
     css: "src/assets/sass/style.scss",
+    fonts: "src/assets/fonts/*.woff",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webmanifest,xml}"
   },
   watch: {
     html: "src/**/*.html",
     js: "src/assets/js/**/*.js",
     css: "src/assets/sass/**/*.scss",
+    fonts: "src/assets/fonts/*.woff",
     images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,webmanifest,xml}"
   },
   clean: "./dist"
@@ -124,6 +127,7 @@ function watchFiles() {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
+  // gulp.watch([path.watch.fonts], fonts);
   gulp.watch([path.watch.images], images);
 }
 
@@ -141,3 +145,5 @@ exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+
+
