@@ -1,0 +1,146 @@
+.welcome {
+  background-image: url(../img/pin.png);
+  background-repeat: repeat;
+  overflow: visible;
+  position: relative;
+
+  &__inner {
+    padding-top: 48px;
+    position: relative;
+
+    top: -295px;
+    background-color: $red;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+
+      background-color: $red;
+      height: 100%;
+      width: 32px;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+  }
+
+  .welcome__wrapper {
+    background-image: url(/assets/img/pin.png);
+    background-repeat: repeat;
+    background-position: 0 0;
+  }
+
+}
+
+.welcome__title {
+  margin-bottom: 65px;
+  position: relative;
+
+  font-size: 30px;
+  font-family: 'helvetica_light';
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    bottom: -35px;
+    left: 530px;
+
+    width: 100px;
+    height: 5px;
+    background-color: $green;
+  }
+}
+
+.welcome__text {
+  margin: 0 auto;
+  margin-bottom: 76px;
+  max-width: 1000px;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: $white;
+
+  text-align: center;
+}
+
+.welcome__feature {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 73px;
+
+  &-item {
+    flex-basis: 27%;
+    // height: 100%;
+    text-align: center;
+
+    &:nth-child(2) {
+      position: relative;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+
+        width: 1px;
+        height: 231px;
+
+        background-color: $white;
+      }
+
+      &::after {
+        right: -19px;
+      }
+
+      &::before {
+        left: -19px;
+      }
+    }
+  }
+}
+
+.feature__img {
+  margin-bottom: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  width: 59px;
+  height: 59px;
+
+  &-one {
+    background-image: url(../img/f-one.png);
+  }
+
+  &-two {
+    background-image: url(../img/f-two.png);
+  }
+
+  &-three {
+    background-image: url(../img/f-three.png);
+  }
+}
+
+.feature__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: $white;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  font-size: 15px;
+  line-height: 24px;
+}

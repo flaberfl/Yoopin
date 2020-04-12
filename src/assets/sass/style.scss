@@ -7,15 +7,14 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
-}
-
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: $white;
+
+  background-color: $black;
+
 }
 
 /* Blocks */
@@ -27,6 +26,9 @@ body {
 @import "blocks/intro";
 @import "blocks/btn";
 @import "blocks/slider";
+@import "blocks/welcome";
+@import "blocks/quote";
+@import "blocks/news";
 // @import "blocks/contacts";
 // @import "blocks/modal";
 // @import "blocks/form";

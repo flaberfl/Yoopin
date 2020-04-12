@@ -1,19 +1,16 @@
-.intro {
-  background-color: $black;
-}
-
 .intro__wrapper {
+  padding: 93px 0 410px;
+  position: relative;
+
   background-image: url(../img/intro-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center -100px;
-  min-height: 1030px;
 }
 
 .intro__title {
   margin: 0 auto;
-  margin-top: 93px;
   margin-bottom: 38px;
+
   max-width: 650px;
 
   font-size: 50px;
@@ -61,4 +58,11 @@
     fill: $black;
   }
 
+}
+
+.intro__foot {
+  background-image: url(../img/pin.png);
+  background-position: 0 0;
+  
+  z-index: 10;
 }
