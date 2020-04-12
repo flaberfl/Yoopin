@@ -187,7 +187,6 @@ body {
 }
 
 .intro__arrow {
-    content: "";
     display: block;
     position: absolute;
     cursor: pointer;
@@ -209,10 +208,17 @@ body {
 
 .intro__arrow--prev {
     left: -115px;
+    transform: rotate(180deg);
 }
 
 .intro__arrow--next {
     right: -115px;
+}
+
+.intro__arrow-icon {
+    width: 15px;
+    height: 16px;
+    fill: #000;
 }
 
 .btn {

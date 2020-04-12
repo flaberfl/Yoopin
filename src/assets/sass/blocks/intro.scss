@@ -24,7 +24,6 @@
 }
 
 .intro__arrow {
-  content: "";
   display: block;
   position: absolute;
 
@@ -49,10 +48,17 @@
 
   &--prev {
     left: -115px;
+    transform: rotate(180deg);
   }
 
   &--next {
     right: -115px;
+  }
+
+  &-icon {
+    width: 15px;
+    height: 16px;
+    fill: $black;
   }
 
 }
