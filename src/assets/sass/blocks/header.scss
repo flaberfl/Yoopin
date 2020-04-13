@@ -1,13 +1,12 @@
 .header {
   background-color: $black;
-}
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding-top: 34px;
-  padding-bottom: 31px;
-
+    padding-top: 34px;
+    padding-bottom: 31px;
+  }
 }

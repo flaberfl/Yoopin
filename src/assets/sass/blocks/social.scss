@@ -1,22 +1,22 @@
 .social {
   display: flex;
-}
 
-.social__link {
-  margin-left: 16px;
-}
-
-.social__icon {
-  display: block;
-  width: 25px;
-  height: 25px;
-
-  fill: $red;
-
-  transition: fill .1s linear;
-
-  &:hover {
-    fill: $white;
+  &__link {
+    margin-left: 16px;
   }
 
+  &__icon {
+    display: block;
+    
+    width: 25px;
+    height: 25px;
+    
+    fill: $red;
+    
+    transition: fill .1s linear;
+
+    &:hover {
+      fill: $white;
+    }
+  }
 }

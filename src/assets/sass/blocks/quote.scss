@@ -1,46 +1,57 @@
 .quote {
-  display: flex;
-  justify-content: space-around;
-
+  padding-top: 400px;
   position: relative;
 
-  top: -187px;
+  background-image: url(/assets/img/pin.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+
+  top: -184px;
+
+  z-index: -1;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__text {
+    margin-left: 50px;
+    position: relative;
+    max-width: 494px;
+
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+
+    color: $white;
+
+    &::before,
+    &::after {
+      content: "“";
+      position: absolute;
+
+      font-family: 'GentiumBasic-Regular';
+      font-size: 250px;
+
+      opacity: 0.08;
+    }
+
+    &::before {
+      top: 78px;
+      left: -111px;
+    }
+
+    &::after {
+      bottom: 50px;
+      right: -61px;
+
+      transform: rotate(180deg);
+    }
+  }
 }
 
-.quote__text {
-  margin-left: 50px;
-  position: relative;
-  max-width: 494px;
 
-  font-size: 22px;
-  line-height: 36px;
-  text-align: center;
-
-  color: $white;
-
-  &::before,
-  &::after {
-    content: "“";
-    position: absolute;
-
-    font-family: 'GentiumBasic-Regular';
-    font-size: 250px;
-
-    opacity: 0.08;
-  }
-
-  &::before {
-    top: 78px;
-    left: -111px;
-  }
-
-  &::after {
-    bottom: 50px;
-    right: -61px;
-
-    transform: rotate(180deg);
-  }
-}
 
 .quote__title {
   margin-right: 23px;
