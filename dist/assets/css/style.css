@@ -8,14 +8,14 @@
 }
 
 @font-face {
-    font-family: 'helvetica_bold';
+    font-family: 'helvetica';
   src: local("☺"), url("../fonts/helvetica_bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'helvetica_light';
+    font-family: 'helvetica';
   src: local("☺"), url("../fonts/helvetica_light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -447,6 +447,133 @@ body {
 .news {
     background-color: #df4507;
     min-height: 500px;
+}
+
+.products {
+    padding: 53px 0 98px;
+    background-color: #df4507;
+}
+
+.products__title {
+    position: relative;
+    padding-bottom: 53px;
+    font-size: 38px;
+    font-family: 'helvetica';
+    text-align: center;
+}
+
+.products__title::after {
+    content: "";
+    position: absolute;
+    bottom: 26px;
+    left: 530px;
+    width: 100px;
+    height: 5px;
+    background-color: #ea8259;
+}
+
+.products__text {
+    margin: 0 auto 63px;
+    max-width: 990px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.products__content {
+    padding: 0 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products__item-descr {
+    margin-right: 30px;
+    max-width: 250px;
+}
+
+.products__item-title {
+    margin-bottom: 21px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+}
+
+.products__item-text {
+    padding-bottom: 30px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.products__item-img {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 202px;
+    height: 258px;
+}
+
+.products__item-img-left {
+    background-image: url(../img/product-left.png);
+}
+
+.products__item-img-right {
+    background-image: url(../img/product-right.png);
+}
+
+.video {
+    padding: 57px 0 81px;
+    background-image: url(../img/backing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .19;
+    z-index: -1;
+}
+
+.video__title {
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'helvetica';
+    text-align: center;
+    z-index: 10;
+}
+
+.video__title::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 530px;
+    width: 100px;
+    height: 5px;
+    background-color: #575656;
+}
+
+.video__title-pref {
+    font-weight: 700;
+}
+
+.video__content {
+    background-color: #000;
+    z-index: 10;
+}
+
+.video__btn {
+    font-size: 11px;
+}
+
+.video__play {
+    font-size: 11px;
 }
 
 /* Vendor Libs */

@@ -1,0 +1,52 @@
+.video {
+  padding: 57px 0 81px;
+
+  background-image: url(../img/backing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  opacity: .19;
+  z-index: -1;
+
+  &__title {
+    position: relative;
+
+    font-size: 30px;
+    color: $white;
+    font-family: 'helvetica';
+
+    text-align: center;
+    z-index: 10;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 530px;
+      width: 100px;
+      height: 5px;
+      background-color: #575656;
+    }
+  
+  }
+
+  &__title-pref {
+    font-weight: 700;
+  }
+
+  &__content {
+    background-color: $black;
+    z-index: 10;
+
+  }
+
+  &__btn {
+    font-size: 11px;
+  }
+
+  &__play {
+    font-size: 11px;
+  }
+
+}
