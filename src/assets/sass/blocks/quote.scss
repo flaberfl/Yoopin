@@ -2,17 +2,22 @@
   padding-top: 400px;
   position: relative;
 
+  margin: 0;
+
   background-image: url(/assets/img/pin.png);
   background-repeat: repeat;
   background-position: 0 0;
 
-  top: -184px;
+  top: -300px;
 
   z-index: -1;
 
   &__inner {
     display: flex;
     justify-content: space-around;
+
+    padding-top: 124px;
+    padding-bottom: 126px;
   }
 
   &__text {
@@ -49,18 +54,16 @@
       transform: rotate(180deg);
     }
   }
-}
 
+  &__title {
+    margin-right: 23px;
+    margin-top: 45px;
 
+    max-width: 200px;
 
-.quote__title {
-  margin-right: 23px;
-  margin-top: 45px;
-
-  max-width: 200px;
-
-  font-family: 'regitalic';
-  font-size: 53px;
-  line-height: 36px;
-  transform: rotate(-15deg);
+    font-family: 'regitalic';
+    font-size: 53px;
+    line-height: 36px;
+    transform: rotate(-15deg);
+  }
 }

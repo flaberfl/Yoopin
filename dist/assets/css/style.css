@@ -268,14 +268,14 @@ body {
     margin-left: 44px;
 }
 
-.welcome__inner {
+.welcome {
     padding-top: 48px;
     position: relative;
     top: 114px;
     background-color: #df4507;
 }
 
-.welcome__inner::before, .welcome__inner::after {
+.welcome::before, .welcome::after {
     content: "";
     position: absolute;
     top: 0;
@@ -284,11 +284,11 @@ body {
     width: 32px;
 }
 
-.welcome__inner::before {
+.welcome::before {
     right: 100%;
 }
 
-.welcome__inner::after {
+.welcome::after {
     left: 100%;
 }
 
@@ -316,8 +316,7 @@ body {
     line-height: 24px;
 }
 
-.welcome__title,
-.welcome__text {
+.welcome__title, .welcome__text {
     color: #fff;
     text-align: center;
 }
@@ -325,7 +324,7 @@ body {
 .welcome__item {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 73px;
+    padding-bottom: 70px;
 }
 
 .welcome__item-content {
@@ -391,16 +390,19 @@ body {
 .quote {
     padding-top: 400px;
     position: relative;
+    margin: 0;
     background-image: url(/assets/img/pin.png);
     background-repeat: repeat;
     background-position: 0 0;
-    top: -184px;
+    top: -300px;
     z-index: -1;
 }
 
 .quote__inner {
     display: flex;
     justify-content: space-around;
+    padding-top: 124px;
+    padding-bottom: 126px;
 }
 
 .quote__text {
