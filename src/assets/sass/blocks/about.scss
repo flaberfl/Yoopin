@@ -1,0 +1,110 @@
+.about {
+  padding: 68px 0 81px;
+
+  background: url(../img/pin.png) repeat;
+  background-position: 0 0;
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__descr {
+
+    &-title {
+      margin-bottom: 20px;
+
+      font-size: 18px;
+      font-weight: 700;
+      color: $white;
+
+      text-transform: uppercase;
+    }
+
+
+    &-text {
+      margin-bottom: 38px;
+
+      max-width: 440px;
+
+      font-size: 13px;
+
+      line-height: 19px;
+    }
+
+
+    &-bages {
+      display: flex;
+    }
+  }
+
+  &__lists {
+    margin: 8px 14px 0 0;
+    display: flex;
+  }
+
+  &__list {
+    margin-left: 96px;
+
+    &-title {
+      display: inline-block;
+
+      margin-bottom: 16px;
+
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    &-item {
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    font-size: 13px;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+}
+
+.bages-item {
+  margin-right: 10px;
+  padding: 0 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 29px;
+
+  &-1 {
+    background-color: #3162a2;
+  }
+
+  &-2 {
+    background-color: #2eb1eb;
+  }
+
+  &-3 {
+    background-color: #f552b6;
+  }
+
+  &-4 {
+    background-color: #457ac0;
+  }
+}
+
+.bages-icon {
+  margin-right: 7px;
+}

@@ -1,5 +1,5 @@
 .video {
-  padding: 57px 0 81px;
+  padding: 57px 0 84px;
   position: relative;
 
   background: url(../img/backing.jpg) no-repeat 50% 50%;
@@ -55,12 +55,12 @@
     background-color: $black;
     background: url(../img/video.jpg) no-repeat 50% 50%;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 12px;
 
     width: 547px;
     height: 333px;
 
-    text-align: center;
+    // text-align: center;
     z-index: 1;
 
     &::before {
@@ -75,16 +75,17 @@
       background-color: rgba(0, 0, 0, .41);
       z-index: -1;
     }
+  }
 
-
+  &__btn-wrap {
+    position: relative;
+    left: 48%;
+    top: 43%;
   }
 
   &__btn {
     position: relative;
 
-    // border: 2px solid $white;
-    // background-color: #292b2e;
-    // border-radius: 50%;
     border: 0;
     background-color: transparent;
     outline: none;
@@ -97,15 +98,15 @@
 
       border: 3px solid $white;
       border-radius: 50%;
-      
+
       width: 48px;
       height: 48px;
-      
-      left: -14px;
+
+      left: -13px;
       top: -11px;
 
       background: #292b2e;
-      
+
       opacity: .3;
       z-index: -1;
 
@@ -113,7 +114,7 @@
   }
 
   &__play {
-
+    position: absolute;
     width: 13px;
     height: 24px;
     fill: $white;
@@ -124,5 +125,4 @@
       opacity: .6;
     }
   }
-
 }
