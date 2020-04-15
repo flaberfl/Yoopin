@@ -1,27 +1,33 @@
 .welcome {
-  padding-top: 48px;
   position: relative;
 
-  top: 114px;
-  background-color: $red;
 
-  &::before,
-  &::after {
-    content: "";
+  &__inner {
+    padding-top: 48px;
     position: absolute;
-    top: 0;
 
+    top: -295px;
     background-color: $red;
-    height: 100%;
-    width: 32px;
-  }
 
-  &::before {
-    right: 100%;
-  }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
 
-  &::after {
-    left: 100%;
+      background-color: $red;
+      height: 100%;
+      width: 32px;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+
   }
 
   &__title {
@@ -29,7 +35,7 @@
     position: relative;
 
     font-size: 30px;
-    font-family: 'helvetica_light';
+    font-family: 'helvetica';
 
     &::after {
       content: "";
@@ -44,6 +50,7 @@
     }
   }
 
+
   &__text {
     margin: 0 auto 76px;
 
@@ -52,6 +59,7 @@
     font-size: 15px;
     line-height: 24px;
   }
+
 
   &__title,
   &__text {
@@ -67,7 +75,6 @@
 
     &-content {
       flex-basis: 27%;
-      // height: 100%;
       text-align: center;
 
       &:nth-child(2) {

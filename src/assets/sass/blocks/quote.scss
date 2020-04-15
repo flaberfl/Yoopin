@@ -1,27 +1,20 @@
 .quote {
-  padding-top: 400px;
-  position: relative;
-
-  margin: 0;
+  padding-top: 410px;
+  padding-bottom: 124px;
 
   background-image: url(/assets/img/pin.png);
   background-repeat: repeat;
   background-position: 0 0;
 
-  top: -300px;
-
-  z-index: -1;
 
   &__inner {
     display: flex;
     justify-content: space-around;
-
-    padding-top: 124px;
-    padding-bottom: 126px;
   }
 
+
   &__text {
-    margin-left: 50px;
+    margin-left: 57px;
     position: relative;
     max-width: 494px;
 
@@ -54,6 +47,7 @@
       transform: rotate(180deg);
     }
   }
+
 
   &__title {
     margin-right: 23px;
