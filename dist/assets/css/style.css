@@ -82,6 +82,53 @@ body {
     padding-bottom: 31px;
 }
 
+@media (max-width: 780px) {
+    .header__inner {
+        justify-content: center;
+    }
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__burger::before, .header__burger::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger-figure {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        top: -4px;
+        left: 20px;
+    }
+}
+
 .logo {
     font-size: 42px;
     font-family: "Myriad-Pro";
@@ -118,7 +165,33 @@ body {
 }
 
 .nav {
-    padding-left: 60px;
+    padding-left: 24px;
+}
+
+.nav__item {
+    margin-right: 34px;
+}
+
+@media (max-width: 1050px) {
+    .nav__item {
+        margin-right: 29px;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav__item {
+        margin-right: 14px;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav__item {
+        margin-right: 3px;
+    }
+}
+
+.nav__item:last-child {
+    margin-right: 0;
 }
 
 .nav__menu {
@@ -131,8 +204,20 @@ body {
     font-size: 20px;
     color: #fff;
     text-decoration: none;
-    margin-right: 34px;
     transition: color .1s linear;
+}
+
+@media (max-width: 1050px) {
+    .nav__menu-link {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .nav__menu-link {
+        font-size: 14px;
+    }
 }
 
 .nav__menu-link:hover {
@@ -157,6 +242,12 @@ body {
 
 .social__icon:hover {
     fill: #fff;
+}
+
+@media (max-width: 892px) {
+    .social__icon {
+        display: none;
+    }
 }
 
 .intro {
@@ -206,8 +297,20 @@ body {
     transform: rotate(180deg);
 }
 
+@media (max-width: 1450px) {
+    .intro__arrow--prev {
+        left: 0;
+    }
+}
+
 .intro__arrow--next {
     right: -115px;
+}
+
+@media (max-width: 1450px) {
+    .intro__arrow--next {
+        right: 0;
+    }
 }
 
 .intro__arrow-icon {

@@ -45,13 +45,23 @@
       outline: 0;
     }
 
+
     &--prev {
       left: -115px;
       transform: rotate(180deg);
+      
+      @media (max-width: 1450px) {
+        left: 0;
+      }
+    
     }
 
     &--next {
       right: -115px;
+    
+      @media (max-width: 1450px) {
+        right: 0;
+      }
     }
 
     &-icon {

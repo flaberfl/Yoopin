@@ -1,5 +1,29 @@
 .nav {
-  padding-left: 60px;
+  padding-left: 24px;
+
+    
+
+  &__item {
+    margin-right: 34px;
+
+      
+    @media (max-width: 1050px) {
+      margin-right: 29px;  
+    }
+
+    @media (max-width: 968px) {
+      margin-right: 14px;  
+    }
+
+    @media (max-width: 968px) {
+      margin-right: 3px;  
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }  
+  }
+
 
   &__menu {
     display: flex;
@@ -10,10 +34,20 @@
       font-size: 20px;
       color: $white;
       text-decoration: none;
-
-      margin-right: 34px;
+      
 
       transition: color .1s linear;
+      
+      @media (max-width: 1050px) {
+        margin-right: 20px;
+        font-size: 15px;
+      }
+
+      @media (max-width: 630px) {
+        font-size: 14px;
+      }
+
+
 
       &:hover {
         color: $red;

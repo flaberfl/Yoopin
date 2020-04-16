@@ -7,16 +7,21 @@
 
   &__icon {
     display: block;
-    
+
     width: 25px;
     height: 25px;
-    
+
     fill: $red;
-    
+
     transition: fill .1s linear;
 
     &:hover {
       fill: $white;
     }
+
+    @media (max-width: 892px) {
+      display: none;
+    }
+
   }
 }
