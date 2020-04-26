@@ -1,5 +1,15 @@
 /* Slider */
 
+.slider {
+  max-width: 840px;
+  margin: 0 auto;
+
+  @media (max-width: 860px) {
+    max-width: 725px;
+  }
+
+}
+
 .slick-slider {
   position: relative;
   display: block;
