@@ -18,6 +18,7 @@ const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
 const browsersync = require("browser-sync").create();
+const gcmq = require('gulp-group-css-media-queries');
 
 
 /* Paths */
@@ -85,6 +86,7 @@ function css() {
     })
     .pipe(plumber())
     .pipe(sass())
+    .pipe(gcmq())
     .pipe(autoprefixer({
       Browserslist: ['last 8 versions'],
       cascade: true
@@ -132,6 +134,12 @@ function fonts() {
   return src(path.src.fonts)
     .pipe(dest(path.build.fonts));
 }
+
+// function sortQuery() {
+//   return src(path.build.css/style.css)
+//     .pipe(gcmq())
+//     .pipe(gulp.dest(path.build.css));
+// }
 
 function clean() {
   return del(path.clean);

@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /*  Bootstrap Modal  */
+
 @font-face {
     font-family: 'GentiumBasic-Regular';
   src: local("☺"), url("../fonts/GentiumBasic-Regular.woff") format("woff");
@@ -57,6 +59,7 @@ body {
 }
 
 /* Blocks */
+
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -82,17 +85,12 @@ body {
     padding-bottom: 31px;
 }
 
-@media (max-width: 780px) {
-    .header__inner {
-        justify-content: center;
-    }
-}
-
 .header__burger {
     display: none;
 }
 
-.header__burger::before, .header__burger::after {
+.header__burger::before,
+.header__burger::after {
     content: "";
     position: absolute;
     background-color: #fff;
@@ -116,17 +114,6 @@ body {
     width: 100%;
     height: 2px;
     background-color: #fff;
-}
-
-@media (max-width: 768px) {
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-        top: -4px;
-        left: 20px;
-    }
 }
 
 .logo {
@@ -172,24 +159,6 @@ body {
     margin-right: 34px;
 }
 
-@media (max-width: 1050px) {
-    .nav__item {
-        margin-right: 29px;
-    }
-}
-
-@media (max-width: 968px) {
-    .nav__item {
-        margin-right: 14px;
-    }
-}
-
-@media (max-width: 968px) {
-    .nav__item {
-        margin-right: 3px;
-    }
-}
-
 .nav__item:last-child {
     margin-right: 0;
 }
@@ -205,19 +174,6 @@ body {
     color: #fff;
     text-decoration: none;
     transition: color .1s linear;
-}
-
-@media (max-width: 1050px) {
-    .nav__menu-link {
-        margin-right: 20px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 630px) {
-    .nav__menu-link {
-        font-size: 14px;
-    }
 }
 
 .nav__menu-link:hover {
@@ -242,12 +198,6 @@ body {
 
 .social__icon:hover {
     fill: #fff;
-}
-
-@media (max-width: 892px) {
-    .social__icon {
-        display: none;
-    }
 }
 
 .intro {
@@ -297,20 +247,8 @@ body {
     transform: rotate(180deg);
 }
 
-@media (max-width: 1450px) {
-    .intro__arrow--prev {
-        left: 0;
-    }
-}
-
 .intro__arrow--next {
     right: -115px;
-}
-
-@media (max-width: 1450px) {
-    .intro__arrow--next {
-        right: 0;
-    }
 }
 
 .intro__arrow-icon {
@@ -387,7 +325,8 @@ body {
     background-color: #df4507;
 }
 
-.welcome__inner::before, .welcome__inner::after {
+.welcome__inner::before,
+.welcome__inner::after {
     content: "";
     position: absolute;
     top: 0;
@@ -428,7 +367,8 @@ body {
     line-height: 24px;
 }
 
-.welcome__title, .welcome__text {
+.welcome__title,
+.welcome__text {
     color: #fff;
     text-align: center;
 }
@@ -448,7 +388,8 @@ body {
     position: relative;
 }
 
-.welcome__item-content:nth-child(2)::after, .welcome__item-content:nth-child(2)::before {
+.welcome__item-content:nth-child(2)::after,
+.welcome__item-content:nth-child(2)::before {
     content: "";
     position: absolute;
     top: 18px;
@@ -522,7 +463,8 @@ body {
     color: #fff;
 }
 
-.quote__text::before, .quote__text::after {
+.quote__text::before,
+.quote__text::after {
     content: "“";
     position: absolute;
     font-family: 'GentiumBasic-Regular';
@@ -930,16 +872,12 @@ body {
 }
 
 /* Vendor Libs */
+
 /* Slider */
+
 .slider {
     max-width: 840px;
     margin: 0 auto;
-}
-
-@media (max-width: 860px) {
-    .slider {
-        max-width: 725px;
-    }
 }
 
 .slick-slider {
@@ -986,7 +924,8 @@ body {
     margin-right: auto;
 }
 
-.slick-track:before, .slick-track:after {
+.slick-track:before,
+.slick-track:after {
     content: "";
     display: table;
 }
@@ -1039,4 +978,70 @@ body {
 
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+@media (max-width: 1450px) {
+    .intro__arrow--prev {
+        left: 0;
+    }
+
+    .intro__arrow--next {
+        right: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .nav__item {
+        margin-right: 29px;
+    }
+
+    .nav__menu-link {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav__item {
+        margin-right: 14px;
+    }
+
+    .nav__item {
+        margin-right: 3px;
+    }
+}
+
+@media (max-width: 892px) {
+    .social__icon {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .slider {
+        max-width: 725px;
+    }
+}
+
+@media (max-width: 780px) {
+    .header__inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        top: -4px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 630px) {
+    .nav__menu-link {
+        font-size: 14px;
+    }
 }
