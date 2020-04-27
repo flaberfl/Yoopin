@@ -135,12 +135,6 @@ function fonts() {
     .pipe(dest(path.build.fonts));
 }
 
-// function sortQuery() {
-//   return src(path.build.css/style.css)
-//     .pipe(gcmq())
-//     .pipe(gulp.dest(path.build.css));
-// }
-
 function clean() {
   return del(path.clean);
 }
