@@ -19,6 +19,8 @@ const del = require("del");
 const panini = require("panini");
 const browsersync = require("browser-sync").create();
 const gcmq = require('gulp-group-css-media-queries');
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
 
 
 /* Paths */
@@ -132,6 +134,8 @@ function images() {
 
 function fonts() {
   return src(path.src.fonts)
+    .pipe(ttf2woff()) // Конвертим TTF в WOFF
+    .pipe(ttf2woff2())
     .pipe(dest(path.build.fonts));
 }
 
