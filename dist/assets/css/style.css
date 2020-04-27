@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/*  Bootstrap Modal  */
-
 @font-face {
     font-family: 'GentiumBasic-Regular';
   src: local("☺"), url("../fonts/GentiumBasic-Regular.woff") format("woff");
@@ -876,7 +874,7 @@ body {
 /* Slider */
 
 .slider {
-    max-width: 840px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
